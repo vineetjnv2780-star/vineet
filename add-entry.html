@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Entry - VK Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button onclick="window.history.back()">← Back</button>
+    <h2>Add New Entry</h2>
+  </header>
+
+  <form id="entryForm">
+    <h3>Customer Details</h3>
+    <input type="text" id="customerName" placeholder="Customer Name *" required>
+    <input type="text" id="fatherName" placeholder="Father's Name *" required>
+    <input type="text" id="mobileNumber" placeholder="Mobile Number *" required>
+    <label>Customer Photo</label>
+    <input type="file" id="customerPhoto">
+
+    <h3>Vehicle Details</h3>
+    <input type="text" id="bikeNumber" placeholder="Bike Number *" required>
+    <input type="text" id="engineNumber" placeholder="Engine Number *" required>
+    <input type="text" id="chassisNumber" placeholder="Chassis Number *" required>
+    <label>Vehicle Photo</label>
+    <input type="file" id="vehiclePhoto">
+
+    <h3>Insurance Details</h3>
+    <label>Insurance Start Date</label>
+    <input type="date" id="insuranceStart">
+    <label>Insurance End Date</label>
+    <input type="date" id="insuranceEnd">
+    <label>Third Party Start Date</label>
+    <input type="date" id="thirdPartyStart">
+    <label>Third Party End Date</label>
+    <input type="date" id="thirdPartyEnd">
+
+    <h3>KYC Documents</h3>
+    <label>Upload KYC Photos (Aadhaar, PAN, etc.)</label>
+    <input type="file" id="kycDocs" multiple>
+
+    <h3>Permanent Address</h3>
+    <textarea id="permanentAddress" placeholder="Full Address *" required></textarea>
+    <input type="text" id="permLandmark" placeholder="Location / Landmark">
+    <label>Upload Address Photos</label>
+    <input type="file" id="permPhotos" multiple>
+
+    <h3>Address of Correspondence</h3>
+    <textarea id="corrAddress" placeholder="Full Address *" required></textarea>
+    <input type="text" id="corrLandmark" placeholder="Location / Landmark">
+    <label>Upload Address Photos</label>
+    <input type="file" id="corrPhotos" multiple>
+
+    <h3>Bike Location</h3>
+    <textarea id="bikeLocation" placeholder="Full Address *" required></textarea>
+    <input type="text" id="bikeLandmark" placeholder="Location / Landmark">
+    <label>Upload Bike Location Photos</label>
+    <input type="file" id="bikePhotos" multiple>
+
+    <div class="btn-group">
+      <button type="button" onclick="window.history.back()">Cancel</button>
+      <button type="submit">Save Entry</button>
+    </div>
+  </form>
+
+  <script src="db.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

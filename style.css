@@ -1,0 +1,43 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  padding: 1rem;
+}
+
+input, textarea, button {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: white;
+  color: #2575fc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-group {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.entry-card {
+  background: rgba(255,255,255,0.2);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+}

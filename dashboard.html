@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - VK Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Abhi Enterprises</h2>
+    <p>Welcome, <span id="userName"></span></p>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <section id="search-section">
+    <input type="text" id="searchInput" placeholder="Search by Bike or Name">
+    <button onclick="searchEntries()">Search</button>
+    <a href="add-entry.html"><button class="add-btn">+ Add New Entry</button></a>
+  </section>
+
+  <section id="entriesList"></section>
+
+  <script src="db.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
