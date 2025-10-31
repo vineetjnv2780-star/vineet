@@ -1,25 +1,17 @@
 {
-  "name": "VK Vehicle Manager",
-  "short_name": "VK App",
-  "description": "A modern vehicle insurance and entry management Progressive Web App built by Vineet.",
+  "name": "VK Apps",
+  "short_name": "VKApps",
+  "description": "Offline Entry Manager for Vehicle and Customer Data",
   "start_url": "./index.html",
-  "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#ffffff",
-  "theme_color": "#0a84ff",
+  "background_color": "#3A0CA3",
+  "theme_color": "#7209B7",
   "icons": [
     {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icons/icon-512.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
+
